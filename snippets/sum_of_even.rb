@@ -1,4 +1,4 @@
 def sum_of_even(min, max)
-  even_numbers = (min...max).select { |n| n%2 === 0 }
-  sum = even_numbers.Sum
+  even_numbers = (min...(max + 1)).select { |n| (n % 2).zero? }
+  even_numbers.reduce(0, :+)
 end
