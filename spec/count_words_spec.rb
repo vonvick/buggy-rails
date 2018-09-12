@@ -13,14 +13,4 @@ describe "#count_words" do
     }
     expect(count_words("This is chocolate and chocolate is very sweet")).to eq expected_result
   end
-
-  it "differentiates between case-sensitive words" do
-    result = count_words("This is chocolate and Chocolate is very sweet")
-
-    expect(result[:chocolate]).to eq(1)
-  end
-
-  it "returns an empty hash if no word is passed in" do
-    expect(count_words("")).to eq({})
-  end
 end
