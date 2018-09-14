@@ -1,8 +1,8 @@
 require 'spec_helper'
 require_relative '../snippets/count_words'
 
-describe "#count_words" do
-  it "should return correct results" do
+describe '#count_words' do
+  it 'should return correct results' do
     expected_result = {
       This: 1,
       is: 2,
